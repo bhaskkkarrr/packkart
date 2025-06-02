@@ -1,0 +1,222 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f6f2;
+  overflow-x: hidden;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.1rem; /* Increase size, adjust as needed */
+  font-weight: 600;
+  padding: 0.4rem 1rem;       /* Padding to give space inside the border */
+  border: 2px solid white;   /* White border */
+  border-radius: 6px;        /* Rounded corners */
+  margin-left: 0.5rem;       /* Space between links */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #ddd !important;
+   color: #7b5e47 !important;           /* Your brand brownish color */
+  background-color: white !important;  /* White background */
+  border-color: #7b5e47 !important; /* Slightly lighter on hover/focus */
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/bg.jpg') center/cover no-repeat;
+  color: white;
+}
+.hero-section .container {
+  max-width: 100%;
+  overflow: hidden;
+}
+.custom-icon {
+  color: #a57946 !important; /* Your desired color */
+}
+
+
+.bg-custom-dark {
+  background-color: #7b5e47  !important;
+}
+
+.bg-custom-light {
+  background-color: #f4ebe2;
+}
+
+.btn-custom {
+  background-color: #a57946;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #8e663a;
+}
+.btn-custom {
+  background-color: #a57946;
+  color: white;
+  border: none;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #8e663a;
+  transform: scale(1.05); /* Slightly enlarge button */
+  color: white;
+}
+
+
+.card-title {
+  font-weight: bold;
+}
+.card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-8px);
+}
+
+.card1{
+    
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card1:hover{
+    transform: translateY(-8px);
+}
+
+#contact h5 {
+  color: #3c2e23;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+#contact p {
+  margin-bottom: 0;
+}
+.map-container {
+    width: 80%;               /* Responsive width */
+  max-width: 500px;         /* Maximum size */
+  margin: 0 auto;           /* Center horizontally */
+  height: 300px;            /* Map height */
+  border-radius: 10px;      /* Optional rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.carousel-inner img {
+  border-radius: 15px;
+  height: 550px;
+  object-fit: cover;
+}
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+section.py-5.text-center .row img {
+  width: 100%;           /* Full width of column */
+  height: 250px;         /* Fixed height */
+  object-fit: cover;     /* Crop to fill container without distortion */
+  border-radius: 10px;   /* Keep rounded corners */
+}
+/* Keep navbar height fixed */
+.navbar {
+  height: 80px; /* Adjust if needed */
+  min-height: 80px;
+}
+
+/* Align nav links vertically and prevent height increase */
+.navbar-nav .nav-link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+/* Increase logo size */
+.navbar-brand img {
+  height: 100px; /* Increase from 80px to 100px (adjust as you like) */
+  width: auto;
+  object-fit: contain;
+}
+/* Responsive adjustments for navbar on small screens */
+@media (max-width: 767.98px) {
+  .navbar {
+    height: auto;
+    min-height: unset;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 1rem !important;
+    padding: 0.3rem 0.6rem !important;
+    border: none !important;         /* Remove border on phones */
+    margin-left: 0.3rem !important;
+  }
+
+  .navbar-brand img {
+    height: 70px !important;
+  }
+
+  .navbar-collapse {
+    margin-top: 0.5rem;
+  }
+}
+.product-link {
+  text-decoration: none;  /* Remove underline */
+  color: inherit;         /* Keep text color same */
+  display: block;         /* Make link a block element */
+  height: 100%;           /* Fill the column height */
+}
+
+.product-link:hover {
+  text-decoration: none;  /* Keep no underline on hover */
+}
+
+.product-link .card {
+  height: 100%;           /* Make card fill the link area */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-link:hover .card {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-8px);
+}
+
+.product-card {
+  position: relative; /* 🔧 This is required for button positioning */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.order-btn {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.5rem; /* ✅ Changed from right to left */
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  background-color: #a57946;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+@media (max-width: 767.98px) {
+  .order-btn {
+    position: static;
+    display: inline-block; /* ensures it behaves like a normal inline button */
+    margin-top: 1rem;
+    float: none;  /* reset any floats if applied */
+  }
+}
+
+.order-btn:hover {
+  background-color: #8e663a;
+  transform: scale(1.05);
+}
