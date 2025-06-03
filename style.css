@@ -298,80 +298,79 @@ section.py-5.text-center .row img {
   background-color: #8e663a !important; /* Darker shade on hover */
   color: #fff;
 }
-:root {
-  --pk-brown: #7b5e47;
-  --pk-brown-light: #a57946;
-  --pk-bg-light: #f9f5f1;
-  --pk-btn-hover: #8e663a;
-}
 
-/* Contact Section Background */
-#contact {
-  background-color: var(--pk-bg-light);
-  color: #000;
-}
-
-/* Text Color */
-#contact h4,
-#contact .form-label,
-#contact .form-control,
-#contact .form-select,
-#contact p,
-#contact h6 {
-  color: #000 !important;
-}
-
-/* Contact Info Icons */
-#contact i {
-  color: var(--pk-brown-light);
-}
-
-/* Remove border from form boxes */
-#contact .form-container,
-#contact .p-4.border {
-  border: none !important;
-  background-color: #fff;
-  border-radius: 0.75rem;
-  box-shadow: 0 0 10px rgba(123, 94, 71, 0.08); /* soft elevation */
-}
-
-/* Form Controls */
-#contact .form-control,
-#contact .form-select {
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  color: #000;
-  background-color: #fff;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-#contact .form-control:focus,
-#contact .form-select:focus {
-  border-color: var(--pk-brown-light);
-  box-shadow: 0 0 4px rgba(123, 94, 71, 0.3);
-  outline: none;
-}
-
-/* Custom Button */
-.btn-custom {
-  background-color: var(--pk-brown-light);
-  color: #fff;
-  font-weight: 600;
-  border: none;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-custom:hover {
-  background-color: var(--pk-btn-hover);
-  transform: scale(1.03);
-}
 
 /* Map Styling */
 .map-container iframe {
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(165, 121, 70, 0.1);
 }
-#contact .row i.bi {
-  color: var(--pk-brown-light) !important;
+/* =======================
+   Contact Page Styling
+==========================*/
+
+/* Backgrounds */
+.bg-custom-light {
+  background-color: #f7f6f2; /* subtle light beige */
+}
+
+/* Custom Button */
+.btn-custom {
+  background-color: #a57946;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #8b6539;
+}
+
+/* Contact Cards */
+#contact .border {
+  border: none !important;
+}
+
+#contact .bg-white {
+  background-color: #fff;
+}
+
+#contact .shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Text Colors */
+#contact,
+#contact h4,
+#contact h6,
+#contact label,
+#contact p,
+#contact input,
+#contact textarea,
+#contact select {
+  color: #000;
+}
+
+/* Icon Colors */
+#contact i.bi {
+  color: #a57946 !important;
+}
+
+/* Form Inputs */
+#contact input,
+#contact textarea,
+#contact select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  box-shadow: none;
+}
+
+/* Form Input Focus */
+#contact input:focus,
+#contact textarea:focus,
+#contact select:focus {
+  border-color: #a57946;
+  box-shadow: 0 0 0 0.15rem rgba(165, 121, 70, 0.25);
+  outline: none;
 }
