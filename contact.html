@@ -59,60 +59,121 @@
     </nav>
 
     <section class="py-5 bg-custom-light" id="contact">
-      <div class="row mb-4 text-center">
-        <div class="col-md-4">
-          <h5>Address</h5>
-          <p>Mohan Nagar, Ghaziabad, Uttar Pradesh, India</p>
+  <div class="container">
+    <!-- Contact Details -->
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-md-3 mb-3">
+        <div class="p-3 border rounded shadow-sm bg-white h-100">
+          <i class="bi bi-geo-alt-fill fs-4 text-primary mb-2"></i>
+          <h6 class="fw-bold">Address</h6>
+          <p class="mb-0 small">Mohan Nagar, Ghaziabad, Uttar Pradesh, India</p>
         </div>
-        <div class="col-md-4">
-          <h5>Email</h5>
-          <p>packkartindia@gmail.com</p>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="p-3 border rounded shadow-sm bg-white h-100">
+          <i class="bi bi-envelope-fill fs-4 text-primary mb-2"></i>
+          <h6 class="fw-bold">Email</h6>
+          <p class="mb-0 small">packkartindia@gmail.com</p>
         </div>
-        <div class="col-md-4">
-          <h5>Phone</h5>
-          <p>+91 9582307736</p>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="p-3 border rounded shadow-sm bg-white h-100">
+          <i class="bi bi-telephone-fill fs-4 text-primary mb-2"></i>
+          <h6 class="fw-bold">Phone</h6>
+          <p class="mb-0 small">+91 9582307736</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Area -->
+    <div class="row justify-content-center gy-4">
+      <!-- Contact Us Form -->
+      <div class="col-md-5">
+        <div class="p-4 border rounded shadow-sm bg-white h-100">
+          <h4 class="text-center mb-3">Contact Us</h4>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Send Message</button>
+          </form>
         </div>
       </div>
 
-      <div class="container">
-        <h2 class="mb-4 text-center">Contact Us</h2>
-        <form class="mx-auto" style="max-width: 600px">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="4"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-custom">Send Message</button>
-        </form>
-      </div>
-      <div class="mt-5">
-        <h5 class="text-center mb-3">Find Us Here</h5>
-        <div class="ratio ratio-16x9 map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4593.738150112764!2d77.38486923848245!3d28.695746158996663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748602677405!5m2!1sen!2sin"
-            style="border: 0"
-            width="100%"
-            height="300px"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+      <!-- Request a Quote Form -->
+      <div class="col-md-6">
+        <div class="p-4 border rounded shadow-sm bg-white h-100">
+          <h4 class="text-center mb-3">Request a Quote</h4>
+          <form>
+            <div class="mb-3">
+              <label for="quote-name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="quote-name" required />
+            </div>
+            <div class="mb-3">
+              <label for="company" class="form-label">Company Name (Optional)</label>
+              <input type="text" class="form-control" id="company" />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" required />
+            </div>
+            <div class="mb-3">
+              <label for="product" class="form-label">Product Type</label>
+              <select class="form-select" id="product" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Corrugated Boxes</option>
+                <option>Courier Bags</option>
+                <option>Packaging Tapes</option>
+                <option>Stretch Film</option>
+                <option>Bubble Wrap</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="quantity" class="form-label">Estimated Quantity</label>
+              <input type="number" class="form-control" id="quantity" required />
+            </div>
+            <div class="mb-3">
+              <label for="location" class="form-label">Delivery Location</label>
+              <input type="text" class="form-control" id="location" required />
+            </div>
+            <div class="mb-3">
+              <label for="requirements" class="form-label">Additional Requirements</label>
+              <textarea class="form-control" id="requirements" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Request Quote</button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Google Map -->
+    <div class="mt-5">
+      <h5 class="text-center mb-3">Find Us Here</h5>
+      <div class="ratio ratio-16x9 map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4593.738150112764!2d77.38486923848245!3d28.695746158996663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748602677405!5m2!1sen!2sin"
+          style="border: 0"
+          width="100%"
+          height="300px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <!-- Footer -->
 <footer class="bg-custom-dark text-white py-3">
   <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-md-5">
@@ -135,13 +196,7 @@
 
   </div>
 </footer>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- WhatsApp Floating Button -->
+<!-- WhatsApp Floating Button -->
 <a href="https://wa.me/919582307736" 
    class="whatsapp-float" 
    target="_blank" 
