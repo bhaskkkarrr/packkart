@@ -1,211 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-          <meta name="description" content="Buy corrugated boxes, courier bags, tapes & more. Trusted packaging supplier in India.">
-  <meta name="keywords" content="packaging, boxes, tapes, courier bags, PackKart India, Packaging Material Wholesaler in Ghaziabad">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Buy corrugated boxes, courier bags, tapes & more. Trusted packaging supplier in India.">
+  <meta name="keywords"
+    content="packaging, boxes, tapes, courier bags, PackKart India, Packaging Material Wholesaler in Ghaziabad">
   <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" href="favicon-32x32.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-    <title>Contact Us | PackKart India</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img
-            src="images/logo graphic-bg removed.png"
-            alt="PackKart India Logo"
-            height="80"
-            class="me-2"
-          />
-          PackKart India
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="product.html">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <title>Contact Us | PackKart India</title>
+</head>
 
-    <section class="py-5 bg-custom-light" id="contact">
-  <div class="container">
-    <!-- Contact Details -->
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-md-3 mb-3">
-        <div class="p-3 border rounded shadow-sm bg-white h-100">
-          <i class="bi bi-geo-alt-fill fs-4 text-primary mb-2"></i>
-          <h6 class="fw-bold">Address</h6>
-          <p class="mb-0 small">Mohan Nagar, Ghaziabad, Uttar Pradesh, India</p>
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <div class="p-3 border rounded shadow-sm bg-white h-100">
-          <i class="bi bi-envelope-fill fs-4 text-primary mb-2"></i>
-          <h6 class="fw-bold">Email</h6>
-          <p class="mb-0 small">packkartindia@gmail.com</p>
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <div class="p-3 border rounded shadow-sm bg-white h-100">
-          <i class="bi bi-telephone-fill fs-4 text-primary mb-2"></i>
-          <h6 class="fw-bold">Phone</h6>
-          <p class="mb-0 small">+91 9582307736</p>
-        </div>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo graphic-bg removed.png" alt="PackKart India Logo" height="60" class="me-2" />
+        <span class="fs-4 fw-bold">PackKart India</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <form class="d-flex position-relative" onsubmit="return redirectToSearch(event)">
+              <div class="input-group">
+                <input class="form-control" type="search" placeholder="Search products..." aria-label="Search"
+                  id="searchInput" autocomplete="off" />
+                <button class="btn btn-outline-light" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+              <ul id="suggestionsList" class="list-group position-absolute w-100 z-3"></ul>
+            </form>
+          </li>
+
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <!-- Form Area -->
-    <div class="row justify-content-center gy-4">
-      <!-- Contact Us Form -->
-      <div class="col-md-5">
-        <div class="p-4 border rounded shadow-sm bg-white h-100">
-          <h4 class="text-center mb-3">Contact Us</h4>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required />
+
+  <section class="py-5 bg-custom-light" id="contact">
+    <div class="container">
+      <!-- Contact Details -->
+      <div class="row justify-content-center text-center mb-5">
+        <!-- Address -->
+        <div class="col-md-3 mb-3 d-flex">
+          <a href="#" class="card-link-wrapper text-decoration-none w-100">
+            <div
+              class="p-3 border rounded shadow-sm bg-white w-100 transition-hover d-flex flex-column justify-content-center h-100">
+              <i class="bi bi-geo-alt-fill fs-4 text-primary mb-2"></i>
+              <h6 class="fw-bold text-dark">Address</h6>
+              <p class="mb-0 small text-dark">Mohan Nagar, Ghaziabad, Uttar Pradesh, India</p>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required />
+          </a>
+        </div>
+
+        <!-- Email -->
+        <div class="col-md-3 mb-3 d-flex">
+          <a href="mailto:packkartindia@gmail.com" class="card-link-wrapper text-decoration-none w-100">
+            <div
+              class="p-3 border rounded shadow-sm bg-white w-100 transition-hover d-flex flex-column justify-content-center h-100">
+              <i class="bi bi-envelope-fill fs-4 text-primary mb-2"></i>
+              <h6 class="fw-bold text-dark">Email</h6>
+              <p class="mb-0 small text-dark">packkartindia@gmail.com</p>
             </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
+          </a>
+        </div>
+
+        <!-- Phone -->
+        <div class="col-md-3 mb-3 d-flex">
+          <a href="https://wa.me/919582307736" target="_blank" class="card-link-wrapper text-decoration-none w-100">
+            <div
+              class="p-3 border rounded shadow-sm bg-white w-100 transition-hover d-flex flex-column justify-content-center h-100">
+              <i class="bi bi-telephone-fill fs-4 text-primary mb-2"></i>
+              <h6 class="fw-bold text-dark">Phone</h6>
+              <p class="mb-0 small text-dark">+91 9582307736</p>
             </div>
-            <button type="submit" class="btn btn-custom w-100">Send Message</button>
-          </form>
+          </a>
         </div>
       </div>
 
-      <!-- Request a Quote Form -->
-      <div class="col-md-6">
-        <div class="p-4 border rounded shadow-sm bg-white h-100">
-          <h4 class="text-center mb-3">Request a Quote</h4>
-          <form>
-            <div class="mb-3">
-              <label for="quote-name" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="quote-name" required />
+
+
+
+      <!-- Form Area -->
+      <div class="row justify-content-center gy-4">
+        <!-- Contact Us Form -->
+        <div class="col-md-6">
+          <div class="p-4 border rounded shadow-sm bg-white h-100">
+            <h4 class="text-center mb-3">Contact Us</h4>
+            <div style="position:relative; width:100%; height:800px;">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfDMzI7_IaeIzV2yOXdDpHbSi-0d8AQeU89hM3YHjbnhgEPyA/viewform?embedded=true"
+                frameborder="0" marginheight="0" marginwidth="0"
+                style="position:absolute; top:0; left:0; width:100%; height:100%;">
+                Loading…
+              </iframe>
             </div>
-            <div class="mb-3">
-              <label for="company" class="form-label">Company Name (Optional)</label>
-              <input type="text" class="form-control" id="company" />
+          </div>
+        </div>
+
+        <!-- Request a Quote Form -->
+        <div class="col-md-6">
+          <div class="p-4 border rounded shadow-sm bg-white h-100">
+            <h4 class="text-center mb-3">Request a Quote</h4>
+            <div style="position:relative; width:100%; height:800px;">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSciewObaZByYm1mTRgPpCHtkYfc8oOsZOhnfriE0KGjE0zZ-Q/viewform?embedded=true"
+                frameborder="0" marginheight="0" marginwidth="0"
+                style="position:absolute; top:0; left:0; width:100%; height:100%;">
+                Loading…
+              </iframe>
             </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phone" required />
-            </div>
-            <div class="mb-3">
-              <label for="product" class="form-label">Product Type</label>
-              <select class="form-select" id="product" required>
-                <option selected disabled value="">Choose...</option>
-                <option>Corrugated Boxes</option>
-                <option>Courier Bags</option>
-                <option>Packaging Tapes</option>
-                <option>Stretch Film</option>
-                <option>Bubble Wrap</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="quantity" class="form-label">Estimated Quantity</label>
-              <input type="number" class="form-control" id="quantity" required />
-            </div>
-            <div class="mb-3">
-              <label for="location" class="form-label">Delivery Location</label>
-              <input type="text" class="form-control" id="location" required />
-            </div>
-            <div class="mb-3">
-              <label for="requirements" class="form-label">Additional Requirements</label>
-              <textarea class="form-control" id="requirements" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-custom w-100">Request Quote</button>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Google Map -->
-    <div class="mt-5">
-      <h5 class="text-center mb-3">Find Us Here</h5>
-      <div class="ratio ratio-16x9 map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4593.738150112764!2d77.38486923848245!3d28.695746158996663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748602677405!5m2!1sen!2sin"
-          style="border: 0"
-          width="100%"
-          height="300px"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-custom-dark text-white py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-md-5">
+      <!-- Center Text -->
+      <div class="text-center mt-2 mt-md-0">
+        <span class="text-uppercase fw-semibold" style="letter-spacing: 1px;">Connect with us:</span>
       </div>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Footer -->
-<footer class="bg-custom-dark text-white py-3">
-  <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-md-5">
-        <!-- Center Text -->
-    <div class="text-center mt-2 mt-md-0">
-      <span class="text-uppercase fw-semibold" style="letter-spacing: 1px;">Connect with us:</span>
-    </div>
-    <!-- Social Icons -->
-    <div class="d-flex align-items-center gap-3">
-      <a href="https://www.facebook.com/profile.php?id=61576748261740" class="social-link"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/packkartindia/" class="social-link"><i class="bi bi-instagram"></i></a>
+      <!-- Social Icons -->
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://www.facebook.com/profile.php?id=61576748261740" class="social-link"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/packkartindia/" class="social-link"><i class="bi bi-instagram"></i></a>
       </div>
 
 
 
-    <!-- Copyright -->
-    <div class="text-center mt-2 mt-md-0">
-      <p class="mb-0">&copy; 2025 PackKart India. All Rights Reserved.</p>
+      <!-- Copyright -->
+      <div class="text-center mt-2 mt-md-0">
+        <p class="mb-0">&copy; 2025 PackKart India. All Rights Reserved.</p>
+      </div>
+
     </div>
-
-  </div>
-</footer>
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919582307736" 
-   class="whatsapp-float" 
-   target="_blank" 
-   title="Chat with us on WhatsApp">
-  <i class="bi bi-whatsapp"></i>
-</a>
+  </footer>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919582307736" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
 </html>
